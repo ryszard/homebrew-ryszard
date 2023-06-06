@@ -5,21 +5,21 @@
 class Think < Formula
   desc "AI-Assisted Command Line Mastery"
   homepage "https://github.com/ryszard/think"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ryszard/think/releases/download/v0.0.7/think_Darwin_x86_64.tar.gz"
-      sha256 "abb6f20028bd49708498b4d56176bd9ef9dfb4de0111723545c055884d3b9c67"
+      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Darwin_x86_64.tar.gz"
+      sha256 "9665f40a09171c9b7e66b07f6abec4381adbb88544153fc99453ef16af518fef"
 
       def install
         bin.install "think"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ryszard/think/releases/download/v0.0.7/think_Darwin_arm64.tar.gz"
-      sha256 "1b836ef1faf09851e4f3a0197b86e5a5215d9d7e3a81459ffc3ec00b9dcf3328"
+      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Darwin_arm64.tar.gz"
+      sha256 "fec94d073a2059c2f6c4131c06fca1e324e4019b234fa737df333fba72fd74be"
 
       def install
         bin.install "think"
@@ -29,16 +29,16 @@ class Think < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ryszard/think/releases/download/v0.0.7/think_Linux_arm64.tar.gz"
-      sha256 "7b1ba936fd0017ec93b7dfee74e52ed4e50cfbb8cf4d9ed87fffe43d220cbf0e"
+      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Linux_arm64.tar.gz"
+      sha256 "8efdfa0b14625cfaf1271c6de6c8e748b831c4a5f4ffbab8e9048118ea9e456a"
 
       def install
         bin.install "think"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryszard/think/releases/download/v0.0.7/think_Linux_x86_64.tar.gz"
-      sha256 "1a9968c86f47698283bdce16551f44b14deda064adb3bda1bc4dad9437539428"
+      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Linux_x86_64.tar.gz"
+      sha256 "e1b7d740e7d613c7b67e6a9a0191cc46a2f0e988bd4fa2ac8782579e77360830"
 
       def install
         bin.install "think"
