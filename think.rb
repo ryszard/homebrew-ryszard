@@ -5,21 +5,21 @@
 class Think < Formula
   desc "AI-Assisted Command Line Mastery"
   homepage "https://github.com/ryszard/think"
-  version "0.0.8"
+  version "0.0.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Darwin_x86_64.tar.gz"
-      sha256 "9665f40a09171c9b7e66b07f6abec4381adbb88544153fc99453ef16af518fef"
+      url "https://github.com/ryszard/think/releases/download/v0.0.11/think_Darwin_x86_64.tar.gz"
+      sha256 "ca3d1c91f6805e1efcfb499e13728102e36de581af0b5fe1d0293f8415e7e6c2"
 
       def install
         bin.install "think"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Darwin_arm64.tar.gz"
-      sha256 "fec94d073a2059c2f6c4131c06fca1e324e4019b234fa737df333fba72fd74be"
+      url "https://github.com/ryszard/think/releases/download/v0.0.11/think_Darwin_arm64.tar.gz"
+      sha256 "0bce97ca9e9e15df0c987f7c08b75df75bea16433854a73b679de5b228cf6a68"
 
       def install
         bin.install "think"
@@ -29,16 +29,16 @@ class Think < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Linux_arm64.tar.gz"
-      sha256 "8efdfa0b14625cfaf1271c6de6c8e748b831c4a5f4ffbab8e9048118ea9e456a"
+      url "https://github.com/ryszard/think/releases/download/v0.0.11/think_Linux_arm64.tar.gz"
+      sha256 "657b4d407b2231a6c71918261463e454259c4cfaec089004375af90d96a3d4dd"
 
       def install
         bin.install "think"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryszard/think/releases/download/v0.0.8/think_Linux_x86_64.tar.gz"
-      sha256 "e1b7d740e7d613c7b67e6a9a0191cc46a2f0e988bd4fa2ac8782579e77360830"
+      url "https://github.com/ryszard/think/releases/download/v0.0.11/think_Linux_x86_64.tar.gz"
+      sha256 "2ce4c0c6e4f68e14578f451be59b9f15e04c4d0c0a5a8117de83cc97ef0641d5"
 
       def install
         bin.install "think"
